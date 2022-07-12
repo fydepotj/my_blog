@@ -2,8 +2,8 @@ module.exports = {
   title: '大鱼海棠',
   description: '大鱼海棠个人博客',
   theme: 'reco',
-  base: '', // 本地运行
-  // base: './', // 打包
+  // base: '', // 本地运行
+  base: './', // 打包
   markdown: {
     lineNumbers: true,
   },
@@ -39,6 +39,16 @@ module.exports = {
         title: 'Vue',
         children: [{ title: 'router', path: 'notes/vue/router' }],
         initialOpenGroupIndex: 0, // 可选的, 默认值是 0
+      },
+      {
+        title: '闲文杂记',
+        collapsable: true,
+        children: [
+          { title: '第一章', path: 'notes/article/01' }, 
+          { title: '第二章', path: 'notes/article/02' },
+          { title: '第三章', path: 'notes/article/03' },
+        ],
+        initialOpenGroupIndex: 1, // 可选的, 默认值是 0
       },
     ],
   },
