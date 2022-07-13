@@ -41,6 +41,11 @@ module.exports = {
         initialOpenGroupIndex: 0, // 可选的, 默认值是 0
       },
       {
+        title: 'markdown',
+        children: [{ title: '基本语法', path: 'notes/markdown/index.md' }],
+        initialOpenGroupIndex: 0, // 可选的, 默认值是 0
+      },
+      {
         title: '闲文杂记',
         collapsable: true,
         children: [
