@@ -42,7 +42,7 @@ module.exports = {
       },
       {
         title: 'MarkDown',
-        children: [{ title: '基础语法', path: 'notes/markdown/index' }],
+        children: [{ title: '基础语法', path: 'notes/markdown/grammar' }],
         initialOpenGroupIndex: 0, // 可选的, 默认值是 0
       },
       {
