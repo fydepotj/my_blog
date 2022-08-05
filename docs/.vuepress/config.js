@@ -4,15 +4,29 @@ module.exports = {
   theme: 'reco',
   // base: '', // 本地运行
   base: './', // 打包
+  head: [
+    ['link', {rel: 'icon', href: '/images/logo.png'}]
+  ],
   markdown: {
     lineNumbers: true,
   },
   themeConfig: {
+    logo: '/images/logo.png',
+    navbar: true,
     nav: [
-      {
-        text: 'HtmlCss',
-        link: '/notes/html',
-      },
+      // 可指定链接跳转模式：默认target: '_blank'新窗口打开，_self当前窗口打开
+      {text: '百度一下', link: 'https://www.baidu.com'},
+      {text: 'CSDN', link: 'https://blog.csdn.net', target: '_blank'},
+      { text: '豆瓣', link: 'https://movie.douban.com', target: '_self', rel: '' }
+      // 支持嵌套,形成下拉式的导航菜单
+      // {
+      //   text: '语言',
+      //   ariaLabel: 'Language Menu',
+      //   items: [
+      //     { text: '中文', link: '' },
+      //     { text: '英文', link: '' }
+      //   ]
+      // }
     ],
     sidebarDepth: 2,
     sidebar: [
