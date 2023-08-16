@@ -2,8 +2,8 @@ module.exports = {
   title: '大鱼海棠',
   description: '大鱼海棠个人博客',
   theme: 'reco',
-  base: '', // 本地运行
-  // base: './', // 打包
+  // base: '', // 本地运行
+  base: './', // 打包
   head: [['link', { rel: 'icon', href: '/images/logo.png' }]],
   markdown: {
     lineNumbers: true,
@@ -49,7 +49,10 @@ module.exports = {
       },
       {
         title: 'NodeJs',
-        children: [{ title: 'express', path: 'notes/nodejs/express' }],
+        children: [
+          { title: 'express', path: 'notes/nodejs/express' },
+          { title: 'CommonJS', path: 'notes/nodejs/CommonJS' },
+        ],
         initialOpenGroupIndex: 0, // 可选的, 默认值是 0
       },
       {
