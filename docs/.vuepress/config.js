@@ -2,8 +2,8 @@ module.exports = {
   title: '大鱼海棠',
   description: '大鱼海棠个人博客',
   theme: 'reco',
-  // base: '', // 本地运行
-  base: './', // 打包
+  base: '', // 本地运行
+  // base: './', // 打包
   head: [['link', { rel: 'icon', href: '/images/logo.png' }]],
   markdown: {
     lineNumbers: true,
@@ -61,6 +61,22 @@ module.exports = {
         title: 'MarkDown',
         children: [{ title: '基础语法', path: 'notes/markdown/grammar' }],
         initialOpenGroupIndex: 0, // 可选的, 默认值是 0
+      },
+      {
+        title: '面试题',
+        collapsable: true,
+        children: [
+          { title: 'css', path: 'notes/interview/css' },
+          { title: 'javascript', path: 'notes/interview/javascript' },
+          { title: 'html5,css3', path: 'notes/interview/c3h5' },
+          { title: 'vue', path: 'notes/interview/vue' },
+          { title: 'Echarts', path: 'notes/interview/Echarts' },
+          { title: 'uniapp', path: 'notes/interview/uniapp' },
+          { title: 'Webpack', path: 'notes/interview/Webpack' },
+          { title: 'git', path: 'notes/interview/git' },
+          { title: 'hr', path: 'notes/interview/hr' },
+        ],
+        initialOpenGroupIndex: 1, // 可选的, 默认值是 0
       },
       {
         title: '闲文杂记',
