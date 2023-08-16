@@ -4,9 +4,7 @@ module.exports = {
   theme: 'reco',
   // base: '', // 本地运行
   base: './', // 打包
-  head: [
-    ['link', {rel: 'icon', href: '/images/logo.png'}]
-  ],
+  head: [['link', { rel: 'icon', href: '/images/logo.png' }]],
   markdown: {
     lineNumbers: true,
   },
@@ -15,9 +13,14 @@ module.exports = {
     navbar: true,
     nav: [
       // 可指定链接跳转模式：默认target: '_blank'新窗口打开，_self当前窗口打开
-      {text: '百度一下', link: 'https://www.baidu.com'},
-      {text: 'CSDN', link: 'https://blog.csdn.net', target: '_blank'},
-      { text: '豆瓣', link: 'https://movie.douban.com', target: '_self', rel: '' }
+      { text: '百度一下', link: 'https://www.baidu.com' },
+      { text: 'CSDN', link: 'https://blog.csdn.net', target: '_blank' },
+      {
+        text: '豆瓣',
+        link: 'https://movie.douban.com',
+        target: '_self',
+        rel: '',
+      },
       // 支持嵌套,形成下拉式的导航菜单
       // {
       //   text: '语言',
@@ -34,7 +37,7 @@ module.exports = {
         title: 'HtmlCss',
         collapsable: true,
         children: [
-          { title: 'html', path: 'notes/htmlcss/html' }, 
+          { title: 'html', path: 'notes/htmlcss/html' },
           { title: 'css', path: 'notes/htmlcss/css' },
         ],
         initialOpenGroupIndex: 1, // 可选的, 默认值是 0
@@ -63,7 +66,7 @@ module.exports = {
         title: '闲文杂记',
         collapsable: true,
         children: [
-          { title: '第一章', path: 'notes/article/01' }, 
+          { title: '第一章', path: 'notes/article/01' },
           { title: '第二章', path: 'notes/article/02' },
           { title: '第三章', path: 'notes/article/03' },
         ],
