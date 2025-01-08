@@ -3,13 +3,13 @@
 set -e
 # 生成静态文件， npm run docs:build
 npm run build
-rm -rf ../blog_dist/dist/*
+rm -rf ../server/dist/*
 
 # 将build生成的dist目录拷贝至上一层目录中
-cp -rf docs/.vuepress/dist ../blog_dist/
+cp -rf docs/.vuepress/dist ../server/
 
 # 进入生成的文件夹
-cd ../blog_dist/dist
+cd ../server/dist
 
 # git初始化，每次初始化不影响推送
 git init
